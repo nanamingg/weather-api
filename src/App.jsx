@@ -81,6 +81,10 @@ const App = () => {
     getWeather();
   }, [latitude, longitude]);
 
+  useEffect(() => {
+    console.log(process.env.REACT_APP_WEATHER_KEY);
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col justify-center items-center text-2xl">
       {weatherData ? (
