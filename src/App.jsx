@@ -1,6 +1,15 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { MdOutlineWbSunny } from "react-icons/md";
+import {
+  BsFillCloudMoonFill,
+  BsCloudyFill,
+  BsCloudsFill,
+  BsCloudFog2,
+} from "react-icons/bs";
+import { IoIosRainy } from "react-icons/io";
+import { FaCloudSunRain, FaSnowflake } from "react-icons/fa";
+import { FiCloudLightning } from "react-icons/fi";
 
 const weatherIcon = {
   "01": {
@@ -9,35 +18,35 @@ const weatherIcon = {
   },
   "02": {
     textColor: "text-orang-500",
-    icon: <MdOutlineWbSunny size={120} />,
+    icon: <BsFillCloudMoonFill size={120} />,
   },
   "03": {
     textColor: "text-gray-500",
-    icon: <MdOutlineWbSunny size={120} />,
+    icon: <BsCloudyFill size={120} />,
   },
   "04": {
     textColor: "text-gray-700",
-    icon: <MdOutlineWbSunny size={120} />,
+    icon: <BsCloudsFill size={120} />,
   },
   "09": {
     textColor: "text-red-200",
-    icon: <MdOutlineWbSunny size={120} />,
+    icon: <IoIosRainy size={120} />,
   },
   10: {
     textColor: "text-blue-500",
-    icon: <MdOutlineWbSunny size={120} />,
+    icon: <FaCloudSunRain size={120} />,
   },
   11: {
     textColor: "text-cyan-500",
-    icon: <MdOutlineWbSunny size={120} />,
+    icon: <FiCloudLightning size={120} />,
   },
   13: {
     textColor: "text-green-300",
-    icon: <MdOutlineWbSunny size={120} />,
+    icon: <FaSnowflake size={120} />,
   },
   50: {
     textColor: "text-brown-500",
-    icon: <MdOutlineWbSunny size={120} />,
+    icon: <BsCloudFog2 size={120} />,
   },
 };
 
