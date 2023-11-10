@@ -25,7 +25,7 @@ const weatherIcon = {
     icon: <BsCloudyFill size={120} />,
   },
   "04": {
-    textColor: "text-gray-700",
+    textColor: "text-green-700",
     icon: <BsCloudsFill size={120} />,
   },
   "09": {
